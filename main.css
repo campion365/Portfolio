@@ -1,0 +1,132 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 1%;
+  }
+
+
+header {
+    font-size: 18px;
+    background-color: #00004d;
+    color: white;
+    border: 1px solid white; 
+    padding-bottom: 10px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: block;
+}  
+
+.nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    /* margin: 15px auto; */
+}
+
+.navbar-toggle,
+.js-navbar-toggle
+ {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+} 
+
+h3{
+  text-align: center;
+  font-size: 20px;
+}
+
+#heading-title{
+    font-size: 24px;
+}
+
+#bio-home,
+.body-text{
+    display: flexbox;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    border-width: 2px grey;
+}
+
+.scrnsht,
+.contactsection {
+    display: block;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 70%;
+    max-height: 70%;
+    border: 1px grey;
+    padding-bottom: 15px;
+
+}
+
+.contactlinks{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (min-width: 900px){
+.hidden {
+    display:block;
+}
+
+.fa-bars {
+    display:none;
+}
+
+.main-nav{
+    width: 60%;
+    margin: auto;
+}
+
+.main-nav li{
+    width: 33%;
+    display: inline-block;
+}
+
+.contactlinks{
+
+    text-align:center;
+    margin-left:35%;
+    margin-right:35%;
+    font-size: 40px;
+    padding: 15px, 40px, 15px;
+   
+}
+}
