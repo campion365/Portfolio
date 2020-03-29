@@ -9,7 +9,7 @@
 
 header {
     font-size: 18px;
-    background-color: #00004d;
+    background-color: black; /* was 00004d*/
     color: white;
     border: 1px solid white; 
     padding-bottom: 10px;
@@ -129,4 +129,20 @@ h3{
     padding: 15px, 40px, 15px;
    
 }
+
+.scrnshtsmall /* remove this later */
+    {
+    display: block;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 20%;
+    max-height: 20%;
+    border: 1px grey;
+    padding-bottom: 15px;
+
+}
+
+
+
 }
