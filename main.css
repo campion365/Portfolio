@@ -7,27 +7,52 @@
   }
 
 
-header {
-    font-size: 18px;
-    background-color: black; /* was 00004d*/
-    color: white;
-    border: 1px solid white; 
-    padding-bottom: 10px;
+body{
+font-family: 'Raleway', sans-serif;
+font-size: 22px black; 
+font-weight: 400;
+line-height: 26px;
 }
 
-h1{
-    font-size: 30px;
+
+#bio-home{
+    padding-top: 10px;
+}
+ 
+ 
+header,
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    background-color: #00004d;
+    color: white;
+    padding: 5px;
     text-align: center;
+}
+
+.fa-bars{
+    font-size: 45px;
+    color: #ffff00;
+    padding-right: 10px;
+    padding-top: 15px;
+
 }
 
 h2{
-    font-size: 20px;
+    font-style: italic;
+    font-size: 16px;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .main-nav {
     list-style-type: none;
     display: block;
+    max-width: 160px;
+    margin-left: 75%;
+    background-color: #390B02;
+    font-size: 20px;
+    line-height: 40px;
 }  
 
 .nav-links {
@@ -36,8 +61,8 @@ h2{
 }
 
 .main-nav li {
-    text-align: center;
-    /* margin: 15px auto; */
+    text-align: right;
+    margin-right: 15px;
 }
 
 .navbar-toggle,
@@ -51,20 +76,24 @@ h2{
     font-size: 24px;
 }
 
+#heading-title,
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+
+.projdesc{
+    font-weight: 600;
+}
+
+
 .active {
     display: block;
 } 
 
-h3{
-  text-align: center;
-  font-size: 20px;
-}
 
-#heading-title{
-    font-size: 24px;
-}
-
-#bio-home,
 .body-text{
     display: flexbox;
     padding: 5%;
@@ -74,7 +103,6 @@ h3{
     border-width: 2px grey;
 }
 
-.scrnsht,
 .contactsection {
     display: block;
     align-items: center;
@@ -82,9 +110,24 @@ h3{
     margin-right:auto;
     max-width: 70%;
     max-height: 70%;
-    border: 1px grey;
     padding-bottom: 15px;
 
+}
+
+img.screenshot {
+    display: block;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 48%;
+    max-height: 48%;
+    border: 1px solid black;
+    margin-bottom: 13px;
+}
+
+.imagetext {
+    display: block;
+    text-align: center;
 }
 
 .contactlinks{
@@ -96,6 +139,12 @@ h3{
     padding-bottom:8px;
 }
 
+.fab,
+.fas{
+padding-left: 20px;
+padding-right: 20px;
+}
+
 .hidden {
   display: none;
 }
@@ -103,45 +152,73 @@ h3{
 
 @media screen and (min-width: 900px){
 .hidden {
-    display:block;
+    display: inline;
+}
+
+h2{
+    padding-bottom: 15px;
+}
+
+.body-text{
+    padding-top: 30px;
+    padding-bottom:30px;
 }
 
 .fa-bars {
     display:none;
 }
 
-.main-nav{
-    width: 60%;
+ul,
+#js-menu {
+    display: inline;
+    list-style-type: none;
     margin: auto;
 }
 
-.main-nav li{
-    width: 33%;
-    display: inline-block;
+
+.main-nav{
+    display: inline;
+    background-color: #00004d;
+} 
+
+ .main-nav li{
+    display: inline-flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffff00;
+
 }
 
-.contactlinks{
+.screenshotsbank {
+    display: flex;
+    align-items: self-start;
+    margin-left:10%;
+    margin-right:10%;
+    /* max-width: 60%; */
+    padding:10px;
+    margin-bottom: 13px;
+}
 
+img.screenshot{
+    display: block;
+    max-width:90%;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+
+.contactlinks{
     text-align:center;
-    margin-left:35%;
-    margin-right:35%;
-    font-size: 40px;
-    padding: 15px, 40px, 15px;
+    margin-left:30%;
+    margin-right:30%;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-right:10px;
+    padding-left: 10px;
    
 }
 
-.scrnshtsmall /* remove this later */
-    {
-    display: block;
-    align-items: center;
-    margin-left:auto;
-    margin-right:auto;
-    max-width: 20%;
-    max-height: 20%;
-    border: 1px grey;
-    padding-bottom: 15px;
-
-}
 
 
 
