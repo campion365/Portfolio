@@ -31,10 +31,9 @@ h1 {
 }
 
 .fa-bars{
+    position: relative;
     font-size: 45px;
     color: #ffff00;
-    padding-right: 10px;
-    padding-top: 15px;
 
 }
 
@@ -48,32 +47,32 @@ h2{
 .main-nav {
     list-style-type: none;
     display: block;
-    max-width: 160px;
-    margin-left: 75%;
-    background-color: #390B02;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0000ff;
     font-size: 20px;
     line-height: 40px;
+    text-align: center;
 }  
 
 .nav-links {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffff00;
 }
 
 .main-nav li {
-    text-align: right;
     margin-right: 15px;
 }
 
-.navbar-toggle,
-.js-navbar-toggle
- {
-    position: absolute;
+.js-navbar-toggle {
+    display:block;
+    height: 100%;
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+    color: #ffff00;
+    font-size: 22px;
 }
 
 h3{
@@ -110,12 +109,15 @@ h3{
 
 .contactsection {
     display: block;
+    text-align: center;
     align-items: center;
+    font-size: 30px;
     margin-left:auto;
     margin-right:auto;
     max-width: 70%;
     max-height: 70%;
     padding-bottom: 15px;
+    padding-top:10px;
 
 }
 
@@ -134,15 +136,6 @@ img.screenshot {
     text-align: center;
 }
 
-.contactlinks{
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    font-size: 30px;
-    padding-top: 8px;
-    padding-bottom:8px;
-}
-
 .fab,
 .fas{
 padding-left: 20px;
@@ -153,11 +146,7 @@ padding-right: 20px;
   display: none;
 }
 
-.fab:hover,
-.fas:hover{
-    color: white;
-    background-color: #00004d;
- }
+
 
 @media screen and (min-width: 900px){
 body{
@@ -176,6 +165,12 @@ body{
 h2{
     padding-bottom: 15px;
 }
+
+.fab:hover,
+.fas:hover{
+    color: white;
+    background-color: #00004d;
+ }
 
 .body-text{
     padding-top: 30px;
@@ -214,8 +209,6 @@ ul,
 .screenshotsbank {
     display: flex;
     justify-content: space-around;
-    /* align-items: self-start; */
-    /* max-width: 60%; */
     padding:10px;
     margin-bottom: 13px;
 }
@@ -228,10 +221,8 @@ img.screenshot{
     border:  1px solid #7a7a52;
 }
 
-.contactlinks{
+.contactsection{
     text-align:center;
-    /* margin-left:30%;
-    margin-right:30%; */
     font-size: 50px;
     padding-top: 15px;
     padding-right:10px;
